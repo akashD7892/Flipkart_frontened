@@ -36,7 +36,7 @@ const ProductDetail = ({product}) => {
 
             <Typography style={{marginTop:5, color:'#878787', fontSize:14}}>8 Rating & 1 review
               <Box component="span">
-                <img src={fassured} alt="image" style= {{ width:77, marginLeft:20 }}/>
+                <img src={fassured} alt="sorry" style= {{ width:77, marginLeft:20 }}/>
               </Box>
             </Typography>
 

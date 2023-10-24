@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react'
 import { Badge, Box, Button, Typography, styled } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'; 
-import { UseSelector, useSelector } from 'react-redux/es/hooks/useSelector';
+import { useSelector } from 'react-redux/es/hooks/useSelector';
 
 import {DataContext} from '../../context/DataProvider' ;
 import LoginDialog from '../../login/LoginDialog';
