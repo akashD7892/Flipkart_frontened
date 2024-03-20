@@ -8,6 +8,7 @@ import DataProvider from './context/DataProvider';
 
 import { Box } from '@mui/material';
 import { BrowserRouter, Routes, Route} from 'react-router-dom' ;
+import PaymentSuccess from './PaymentSuccess';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/' element = {<Home/>} />
           <Route path='/product/:id' element = { <DetailView/>} />
           <Route path='/cart' element={<Cart/>} />
+          <Route path='/paymentsuccess' element={<PaymentSuccess/>} />
         </Routes>
       </Box>
      

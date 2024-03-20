@@ -27,8 +27,24 @@ const Remove = styled(Button)`
  color:#000;
  font-weight:600 ;
 `
-const CartItem = ({item}) => {
+const ButtonWrapper = styled(Box)`
+ padding: 16px 22px ;
+ background:#fff ;
+ box-shadow:0 -2px 10px 0 rgb(0 0 0 / 10%) ;
+ border-top: 1px solid #f0f0f0 ;
+`
+const StyledButton = styled(Button)`
+ display:flex ;
+ margin-left:auto;
+ background:#fb641d;
+ color:#fff ;
+ width:250px ;
+ height:51px ;
+`
+
+const CartItem = (props) => {
     
+    const {item, checkoutHandler} = props ;
     const fassured = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png' ;
     
     const dispatch = useDispatch() ;
@@ -54,6 +70,9 @@ const CartItem = ({item}) => {
             </Typography>
 
             <Remove onClick={() => removeItemFromCart(item.id)}>Remove</Remove>
+            <ButtonWrapper>
+              <StyledButton onClick={() => checkoutHandler(item.price.cost)}>Place Order</StyledButton>
+            </ButtonWrapper>
               
             </Box>
         </Component>

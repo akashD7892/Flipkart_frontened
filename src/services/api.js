@@ -1,7 +1,7 @@
 import axios from 'axios' 
 
-//const URL = 'http://localhost:8000' ;
-const URL = 'https://flipkart-clone-backened.onrender.com' ;
+const URL = 'http://localhost:8000' ;
+//const URL = 'https://flipkart-clone-backened.onrender.com' ;
 
 export const authenticateSignup = async(data) => {
     try {
